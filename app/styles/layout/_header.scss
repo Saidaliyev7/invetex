@@ -1,0 +1,120 @@
+#header{
+    color: white;
+    position: relative;
+    overflow: hidden;
+    background-color: white;
+    .header-top{
+        position: absolute;
+        color: white;
+        z-index: 55;
+        width: 95%;
+        padding: 20px 30px;
+        transition: 0.3s ease;
+        nav{
+        align-items: center;
+        .navbar-nav{
+            color: white !important;
+            ul{
+                >li{
+                    cursor: pointer;
+                    font-size: 18px;
+                    padding: 10px;
+                    padding-bottom: 18px;
+                    position: relative;
+                    .dropdown{
+                        display: none;
+                        position: absolute;
+                        width: 200px;
+                        padding: 20px 0;
+                        top: 42px;
+                        left: -20px;
+                        background-color: #222326;
+                        li{
+                            opacity: 0.5;
+                            transition: 0.3s ease;
+                            &:hover{
+                             opacity: 1;
+                            }
+                        }
+                        .active{
+                            opacity: 1;
+                        }
+                    }
+                }
+            }
+        }
+        }
+    }
+    .header-top.active{
+        position: fixed;
+        top: -90px;
+        color: black;
+        background-color: white;
+        transition: 0.3s ease;
+        width: 97%;
+        z-index: 555;
+        .navbar-nav{
+           ul{
+               >li{
+                color: black !important;
+                .dropdown{
+                    li{
+                        opacity: 0.5;
+                        color: white !important;
+                    }
+                    li.active{
+                        opacity: 1;
+                        color: white !important;
+                    }
+                }
+
+               }
+               >li.active{
+                   color: #54be73 !important;
+               }
+           } 
+        }
+    }
+    .header-bottom{
+        position: relative;
+        height: 34em;
+        .img{
+            img{
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                 left:0 ;
+            }
+        }
+        .bottom-txt{
+            position: relative;
+            z-index: 55;
+            width: 50%;
+            text-align: center;
+            .head-txt{
+                font-size: 44px;
+                margin-bottom: 20px;
+            }
+            .head-ul{
+                text-align: center;
+                ul{
+                    justify-content: center;
+                    li:not(.separator){
+                        color: #cfcfcf;
+                        padding: 0px 10px;
+                        a{
+                            color: #cfcfcf;
+                            text-decoration: none;
+                            transition: 0.3s ease;
+                            &:hover{
+                                color: #54be73; 
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

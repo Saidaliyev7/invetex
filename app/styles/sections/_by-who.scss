@@ -1,0 +1,81 @@
+#who-we{
+    background-color: white;
+    padding: 100px 0px;
+    .top{
+        >h1{
+            color: #28262b;
+            font-size: 40px;
+            margin-bottom: 20px;
+        }
+        >p{
+            font-weight: 300;
+            line-height: 1.4em;
+            font-style: italic;
+            color: #888490;
+            text-align: center;
+            position: relative;
+            padding-bottom: 20px;
+            
+        }
+    }
+    .bottom{
+        margin-top: 30px;
+        .item{
+            .item-img{
+                img{
+                    width: 370px;
+                }
+            }
+            .item-content{
+                text-align:center;
+                .top{
+                    
+                    a{
+                        color: #28262b;
+                        font-size: 18px;
+                        text-decoration: none;
+                        transition: 0.3s ease;
+                        font-weight: 600;
+                        &:hover{
+                            color: #54be73; 
+                        }
+                    }
+                }
+                .center{
+                    font-style: italic;
+                    font-weight: 400;
+                    margin-top: 10px;
+                    color: #6d7275;
+                }
+                .bottom{
+                    width: 80%;
+                    margin: 0px auto;
+                    margin-top: 30px;
+                    &::after{
+                        background-color: #dacdc2;
+                        bottom: -16px !important;
+                        content: " ";
+                        display: block;
+                        height: 1.5px;
+                        right: 50% !important;
+                       margin: 0px;
+                        position: absolute;
+                        width: 24px;
+                    }
+                    &::before{
+                        bottom: -13px !important;
+                        content: " ";
+                        left: inherit;
+                        display: block;
+                        height: 1.5px;
+                        margin: 0px;
+                        position: absolute;
+                        right: 50% !important;
+                        width: 24px;
+                        background-color: #dacdc2;
+                    }
+                }
+            }
+        }
+    }
+}

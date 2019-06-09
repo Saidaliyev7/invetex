@@ -1,0 +1,105 @@
+#footer{
+    padding: 100px 0px;
+    padding-bottom: 50px;
+    color: white;
+    .header{
+        margin-bottom: 50px;
+        font-size: 32px;
+        img{
+            width: auto;
+        }
+    }
+    .col-pages{
+        .header{
+            margin-left: 95px;
+        }
+        .body{
+            margin-left: 100px;
+        }
+    }
+    .body{
+        >ul{
+            color: #aab0b6;
+            >li{
+                padding-bottom: 30px;
+                li{
+                    padding-bottom: 5px;
+                    position: relative;
+                    padding-left: 20px;
+                    .icon{
+                        text-align: center;
+                        position: absolute;
+                        left: -5px;
+                        width: 15px;
+                    }
+                }
+            }
+        }
+    }
+    .body.pages{
+        ul{
+            li{
+                padding-bottom: 10px;
+                a{
+                    color: #aab0b6;
+                    text-decoration: none;
+                    transition: 0.3s ease; 
+                    &:hover{
+                        color: #54be73;
+                    }
+                }
+            }
+        }
+        input,textarea {
+            color: #8a8a8a;
+            border-color: transparent;
+            background-color: #ebebeb;
+            border: 1px solid transparent;
+            border-radius: 30px;
+            width: 88%;
+            padding: 1em 1.65em;
+            outline-color: transparent;
+            margin-bottom: 10px;
+            transition: 0.3s ease;
+            &:focus{
+            background-color: white;
+            }
+          }
+          .txt-box{
+            width: 88%;
+            height: 100px;
+        }
+        button{
+            background-color: #54be73;
+            color: #ffffff;
+            border: none;
+            display: inline-block;
+            text-align: center;
+            font-weight: 500;
+            outline-color: transparent;
+            padding: 1.15em 2.8em;
+            border-radius: 2em;
+            cursor: pointer;
+            transition: 0.3s ease;
+            i{
+                margin-right: 10px;
+            }
+            &:hover{
+            opacity: 0.8;
+            }
+        }
+    }
+    .social-links{
+        margin-top: 70px;
+        li{
+            padding:0px 10px;
+            >a{
+                color: white;
+                transition: 0.3s ease;
+                &:hover{
+                    color: #54be73;
+                }
+            }
+        }
+    }
+}

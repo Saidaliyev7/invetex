@@ -1,0 +1,137 @@
+// bower:scss
+// endbower
+
+@import "../fonts/stylesheet.css";
+
+body {
+  font-family: 'Helvetica Neue';
+  background-color: #222326;
+
+}
+textarea {
+  resize: none;
+}
+img{
+  width: 100%;
+}
+$size_wrapper-large:100%;
+$size_wrapper-small:970px;
+
+// .container-fluid{
+//   width: $size_wrapper-large;
+//  margin: 0px auto;
+// }
+
+// .container{
+//   width: $size_wrapper-small;
+//   margin: 0px auto;
+// }
+.border-bottom-after{
+  position: relative;
+  &:after{
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 1.5px;
+    margin: 0 1px 0 0;
+    position: absolute;
+    right: 50%;
+    width: 24px;
+    background-color: #54be73;
+}
+&:before{
+    background-color: #54be73;
+    bottom: 0;
+    content: " ";
+    display: block;
+    height: 1.5px;
+    left: 50%;
+    margin: 0 0 0 1px;
+    position: absolute;
+    width: 24px;
+}
+}
+.flex{
+  display: flex;
+}
+.flex-between{
+  
+  justify-content: space-between;
+}
+.flex-column{
+  flex-direction: column;
+}
+.flex-center{
+justify-content: center;
+align-items: center;
+}
+.separator{
+  opacity: 0.5;
+  transition: 0.3s ease;
+}
+.header-top.active{
+  .separator {
+    opacity: 0;
+  }
+}
+.owl-dots{
+  transform: translateY(-100px);
+  button{
+   outline-color: transparent;
+  }
+}
+.owl-nav{
+  .owl-prev{
+    position: absolute;
+    top: 40%;
+    left: 25px;
+    font-size: 60px !important;
+    width: 50px;
+  }
+  .owl-next{
+    position: absolute;
+    top: 40%;
+    right: 25px;
+    font-size: 60px !important;
+    width: 50px;
+  }
+}
+.arrow-up{
+  width: 40px;
+  height: 40px;
+  text-align:center;
+  line-height: 40px;
+  font-size: 20px;
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s ease;
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+  &:hover{
+    opacity: 1;
+  }
+}
+/*=============================================
+=            layout            =
+=============================================*/
+
+@import './layout/layout';
+
+/*=====  End of layout  ======*/
+
+
+
+
+/*=============================================
+=            sections            =
+=============================================*/
+
+@import "./sections/sections";
+
+/*=====  End of sections  ======*/
+

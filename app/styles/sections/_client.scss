@@ -1,0 +1,25 @@
+#client{
+    background-color: white;
+    padding: 100px 0px;
+    .head{
+        text-align: center;
+        h1{
+            font-size: 32px ;
+            color: black;
+            margin-bottom: 15px;
+        }
+        p{
+            color: #888490;
+            font-style: italic;
+            margin-bottom: 40px;
+            padding-bottom: 40px;
+        }
+    }
+
+    .owl-carousel{
+        img{
+            width: 150px;
+            margin: 0px auto;
+        }
+    }
+}
